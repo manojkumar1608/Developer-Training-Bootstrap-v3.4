@@ -14,34 +14,49 @@
   </head>
 
   <body>
-    <div class="container-fluid">
+    <div class="container ">
       <!-- header section -->
       <section class="header text-center">
-        <h1>MANOJ KUMAR</h1>
+        <h1 class="header-name">MANOJ KUMAR</h1>
       </section>
 
       <!-- middle section -->
-      <section class="container">
+      <section class="center-container ">
         <div class="row">
           <!-- Tabs Navigation -->
           <div class="col-xs-12 col-sm-4">
             <ul class="nav nav-pills">
               <li role="presentation" class="active col-xs-3 col-sm-12">
-                <a href="#Objective" data-toggle="tab">Objective</a>
+                <a href="#Objective" data-toggle="tab" data-toggle="tooltip" title="View Objective" data-placement="top">
+                  <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+                  <span class="tab-heading">Objective</span>
+                </a>
               </li>
               <li role="presentation" class="col-xs-3 col-sm-12">
-                <a href="#Education" data-toggle="tab">Education</a>
-              </li>
+                <a href="#Education" data-toggle="tab" data-toggle="tooltip" title="View Education" data-placement="top">
+                  <span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+                  <span class="tab-heading">Education</span>
+                </a>
+                             </li>
 
-              <li role="presentation" class="col-xs-3 col-sm-12">
-                <a href="#Projects" data-toggle="tab">Projects</a>
-              </li>
-              <li role="presentation" class="col-xs-3 col-sm-12">
-                <a href="#Experience" data-toggle="tab">Experience</a>
-              </li>
-              <li role="presentation" class="col-xs-3 col-sm-12">
-                <a href="#References" data-toggle="tab">References</a>
-              </li>
+                             <li role="presentation" class="col-xs-3 col-sm-12">
+                              <a href="#Projects" data-toggle="tab" data-toggle="tooltip" title="View Projects" data-placement="top" >
+                                <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+                                <span class="tab-heading">Projects</span>
+                              </a>
+                            </li>
+                            <li role="presentation" class="col-xs-3 col-sm-12">
+                              <a href="#Experience" data-toggle="tab" data-toggle="tooltip" title="View Experience" data-placement="top">
+                                <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
+                                <span class="tab-heading">Experience</span>
+                              </a>
+                            </li>
+                            <li role="presentation" class="col-xs-3 col-sm-12">
+                              <a href="#References" data-toggle="tab" data-toggle="tooltip" title="View References" data-placement="top">
+                                <span class="glyphicon glyphicon-user icon" aria-hidden="true"></span>
+                                <span class="tab-heading">References</span>
+                              </a>
+                            </li>
             </ul>
           </div>
           <!-- Tab Content -->
@@ -92,16 +107,18 @@
       </section>
 
       <!-- footer section -->
-      <section class="footer text-center ">
-        <h2>Contact Info</h2>
-        <p>Phone:9908993803</p>
-        <p>Email:manoj@cloudnix.com</p>
+      <section id="mypage_footer" class="footer text-center ">
+        <h2 class="">Contact Info</h2>
+        <div class="footer-info">
+            <p class="phone"><span>Phone:</span> +91 9908993803</p>
+            <p><span>Email:</span> manojkumar@cloudnix.com</p>
+        </div>
       </section>
 
       <div class="form-container">
         <h3 class="heading text-danger text-center">Find Max Number</h3>
         <div class="card p-4 border-1 border-danger ">
-            <form  class="form-inline"  onsubmit="return max();">
+            <form  class="form-inline"  onsubmit="max(); return false ;">
                 <div class=" form-group mb-3">
                     <label for="num1" class="form-label ">Number 1:<span class="red-asterisk">*</span></label>
                     <input class="form-control" type="number" id="num1" placeholder="Enter first number" required>

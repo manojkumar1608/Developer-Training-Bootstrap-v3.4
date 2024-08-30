@@ -1,7 +1,10 @@
 .header,
 .footer {
+  box-shadow: 0 4px 8px rgba(29, 66, 10, 0.8) !important;
+  box-sizing: border-box;
   padding: 4px;
   color: rgb(255, 255, 255);
+  background-color: #80a04a; /* Primary color */
 }
 .header {
   position: sticky;
@@ -9,11 +12,9 @@
   padding-bottom: 20px;
   z-index: 100;
   margin-bottom: 55px !important;
-  background-color: #80a04a; /* Primary color */
 }
 .footer {
   margin-top: 65px;
-  background-color: #80a04a; /* Primary color */
 }
 
 .nav-pills > li {
@@ -21,16 +22,41 @@
   font-weight: bold;
   font-size: large;
 }
-.nav-pills > li > a {
-  color: rgb(124, 118, 118);
+ul.nav-pills .tab-heading {
+  color: rgb(124, 118, 118) !important;
 }
 .nav-pills > li.active > a {
-  background-color: #80a04a !important; /* Change this to your desired color */
+  box-shadow: 0 0px 6px rgba(29, 66, 10, 0.8) !important;
+  box-sizing: border-box;
+  background-color: #80a04a !important;
+  color: white !important;
+}
+.nav-pills > li.active > a .tab-heading {
+  color: white !important;
 }
 
 .tab-content > .tab-pane {
-  font-size: medium;
+  font-size: large;
   padding: 15px; /* Add padding to the content area */
+}
+
+#mypage_footer {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 6px;
+}
+
+.footer > h2 {
+  margin: 10px 2px 18px 2px !important;
+}
+
+.footer-info {
+  font-size: medium !important;
+  text-align: left;
 }
 
 /* Responsive behavior for extra-small screens */
@@ -42,6 +68,7 @@
     margin: 0;
   }
   .nav-pills > li {
+    position: relative;
     font-size: small;
     padding: 0;
     flex: 1;
@@ -51,6 +78,15 @@
   .nav-pills > li > a {
     padding: 12px 4px !important;
   }
+  .tab-heading {
+    width: 0;
+  }
+  .tab-heading {
+    display: none;
+  }
+  .glyphicon {
+    font-size: medium;
+  }
 
   .tab-content > .tab-pane {
     font-size: small;
@@ -58,9 +94,12 @@
     padding: 15px;
   }
 
-  .header,
-  .footer {
-    padding: 1px;
+  .header {
+    margin-bottom: 20px !important;
+  }
+  .footer-info {
+    font-size: small !important;
+    text-align: left;
   }
 }
 
