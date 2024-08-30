@@ -127,7 +127,7 @@
                 </div>
                 <div class="form-group mb-3">
                     <label for="num2" class="form-label">Number 2:<span class="red-asterisk">*</span></label>
-                    <input class="form-control" type="number" id="num2" placeholder="Enter second number" required>
+                    <input class="form-control" type="number" id="num2" placeholder="Enter second number" required autocomplete="off">
                 </div>
                 <div class="btn">
                   <button type="submit" id="maxbtn" class="btn btn-primary ">Find Max</button>
@@ -145,7 +145,7 @@
           <form  class="form-inline" onsubmit="reverse(); return false;">
               <div class="form-group mb-3">
                   <label for="stringInput" class="form-label">Enter a string:<span class="red-asterisk">*</span></label>
-                  <input type="text" id="stringInput" class="form-control" placeholder="Enter your string" required>
+                  <input type="text" id="stringInput" class="form-control" placeholder="Enter your string" required autocomplete="off">
               </div>
               <div class="btn">
                 <button type="submit" id="reverseBtn" class="btn btn-primary">Reverse</button>
@@ -156,32 +156,13 @@
       </div>
   </div>
 
-
   <div class="form-container ">
     <h3 class="heading text-danger text-center">Find Longest Word</h3>
     <div class="card p-4 border-1 border-danger ">
         <form class="form-inline" onsubmit="FindLongestWord(); return false;">
             <div class="form-group mb-3">
                 <label for="wordInput" class="form-label">Enter comma-separated words:<span class="red-asterisk">*</span></label>
-                <input type="text" id="wordInput" class="form-control" list="languages" placeholder="e.g., apple, banana, cherry, date" required>
-                <datalist id="languages">
-                    <option value="AppleScript">
-                    <option value="Asp">
-                    <option value="Bash">
-                    <option value="C">
-                    <option value="C++">
-                    <option value="Clojure">
-                    <option value="COBOL">
-                    <option value="ColdFusion">
-                    <option value="Java">
-                    <option value="JavaScript">
-                    <option value="Perl">
-                    <option value="PHP">
-                    <option value="Python">
-                    <option value="Ruby">
-                    <option value="Scala">
-                    <option value="Scheme">
-                </datalist>
+                <input type="text" id="wordInput" class="form-control" placeholder="e.g., apple, banana, cherry, date" required>
               </div>
               <div class="btn">
                   <button type="submit" id="findLongestBtn" class="btn btn-primary">Find Longest Word</button>
@@ -202,7 +183,7 @@
             </div>
             <div class="form-group">
                 <label for="phoneInput" class="form-label">Mobile:<span class="red-asterisk">*</span></label>
-                <input type="text" id="phoneInput" class="form-control" placeholder="Enter your phone number" required>
+                <input type="text" id="phoneInput" class="form-control" placeholder="Enter your phone number" required autocomplete="off">
             </div>
             <div class="btn">
               <button type="submit" id="saveBtn" class="btn btn-primary">Save</button>
