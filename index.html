@@ -16,7 +16,7 @@
   <body>
     <div class="container ">
       <!-- header section -->
-      <section class="header text-center">
+      <section id="mypage_header" class="header text-center">
         <h1 class="header-name">MANOJ KUMAR</h1>
       </section>
 
@@ -108,12 +108,14 @@
 
       <!-- footer section -->
       <section id="mypage_footer" class="footer text-center ">
-        <h2 class="">Contact Info</h2>
-        <div class="footer-info">
+        <footer>
+          <h2 class="">Contact Info</h2>
+          <div class="footer-info">
             <p class="phone"><span>Phone:</span> +91 9908993803</p>
             <p><span>Email:</span> manojkumar@cloudnix.com</p>
+          </footer>
+        </section>
         </div>
-      </section>
 
       <div class="form-container">
         <h3 class="heading text-danger text-center">Find Max Number</h3>
@@ -210,6 +212,26 @@
         </form>
     </div>
 </div>
+
+
+<div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Footer</h4>
+      </div>
+      <div class="modal-body">
+        <p>Animation Completed&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+      </div>
+    </div>
+  </div>
+
+
 
     <script
       src="https://code.jquery.com/jquery-1.12.4.min.js"

@@ -8,7 +8,7 @@
 }
 .header {
   position: sticky;
-  top: 0;
+  top: 1px;
   padding-bottom: 20px;
   z-index: 100;
   margin-bottom: 55px !important;
@@ -119,6 +119,8 @@ ul.nav-pills .tab-heading {
   background-color: #f7f7f7;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
+  border: 2px solid rgb(16, 100, 16);
+  border-radius: 8px !important;
   font-family: "Poppins", sans-serif;
 }
 .form-inline {
@@ -134,12 +136,15 @@ ul.nav-pills .tab-heading {
   width: 300px !important;
   padding: 18px;
 }
+.btn {
+  margin-top: 5px !important;
+}
 /* Result and error messages styling */
 #max_result,
 #reverse_result,
 #longestWord_result,
 #cookie_result {
-  margin-top: 15px;
+  margin-top: 5px;
   font-weight: bold;
   font-size: 18px;
   color: solid black;
@@ -151,7 +156,7 @@ ul.nav-pills .tab-heading {
 #longestWord_error,
 #reverse_error {
   color: #e74c3c;
-  margin-top: 15px;
+  margin-top: 5px;
   font-weight: 400;
   font-size: 18px;
   text-align: center;

@@ -107,3 +107,41 @@ function saveDetails() {
   }
 }
 loadDetails();
+
+$(document).ready(function () {
+  $("#mypage_header h1").css({
+    display: "none",
+  });
+  // Header setup
+  $("#mypage_header").hover(
+    function () {
+      // Mouse enters
+      $("#mypage_header h1").css({
+        display: "block",
+      });
+      $(this).stop(true).animate({ height: "100px" }, 600);
+    },
+    function () {
+      // Mouse leaves
+      $("#mypage_header h1").css({
+        display: "none",
+      });
+      $(this).stop(true).animate({ height: "10px" }, 600);
+    }
+  );
+
+  const $footer = $("#mypage_footer footer");
+  $footer.css({
+    display: "none",
+  });
+  $("#mypage_footer").on("mouseenter", function () {
+    $footer.stop(true, true).slideDown(10000, function () {
+      $("#myModal").modal("show");
+    });
+  });
+
+  // Mouse leave: slide up
+  $("#mypage_footer").on("mouseleave", function () {
+    $footer.stop(true).slideUp(500);
+  });
+});
