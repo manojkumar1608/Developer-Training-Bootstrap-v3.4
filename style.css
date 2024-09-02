@@ -1,3 +1,7 @@
+.container {
+  margin-top: 10px;
+}
+/* header and footer styling */
 .header,
 .footer {
   box-shadow: 0 4px 8px rgba(29, 66, 10, 0.8) !important;
@@ -6,9 +10,7 @@
   color: rgb(255, 255, 255);
   background-color: #80a04a;
 }
-.container {
-  margin-top: 10px;
-}
+/* header styling */
 .header {
   position: sticky;
   top: 1px;
@@ -17,10 +19,8 @@
   z-index: 100;
   margin-bottom: 55px !important;
 }
-.footer {
-  margin-top: 65px;
-}
 
+/* center section nav/content */
 .nav-pills > li {
   float: none;
   font-weight: bold;
@@ -38,7 +38,6 @@ ul.nav-pills .tab-heading {
 .nav-pills > li.active > a .tab-heading {
   color: white !important;
 }
-
 .tab-content > .tab-pane {
   font-size: large;
   padding: 0px;
@@ -49,6 +48,7 @@ ul.nav-pills .tab-heading {
   font-size: 23px;
 }
 
+/* footer section */
 #mypage_footer {
   padding: 20px;
   text-align: center;
@@ -58,17 +58,18 @@ ul.nav-pills .tab-heading {
   margin-bottom: 10px;
   margin-top: 32px;
 }
-
+.footer {
+  margin-top: 65px;
+}
 .footer > h2 {
   margin: 10px 2px 18px 2px !important;
 }
-
 .footer-info {
   font-size: medium !important;
   text-align: left;
 }
 
-/* Responsive behavior for extra-small screens */
+/* Responsive styling of resume  for small screens */
 @media (max-width: 767px) {
   .nav-pills {
     display: flex;
@@ -96,7 +97,6 @@ ul.nav-pills .tab-heading {
   .glyphicon {
     font-size: medium;
   }
-
   .tab-content > .tab-pane {
     font-size: small;
     margin-top: 10px;
@@ -115,6 +115,7 @@ ul.nav-pills .tab-heading {
   }
 }
 
+/* javscript forms styling */
 .form-container {
   font-family: "Poppins", sans-serif;
 }
@@ -123,7 +124,7 @@ ul.nav-pills .tab-heading {
   color: darkgreen !important;
 }
 
-/* Container styling */
+/* form styling */
 .card {
   width: 400px;
   margin: 10px auto;
@@ -151,6 +152,7 @@ ul.nav-pills .tab-heading {
 .btn {
   margin-top: 5px !important;
 }
+
 /* Result and error messages styling */
 #max_result,
 #reverse_result,
@@ -173,12 +175,8 @@ ul.nav-pills .tab-heading {
   font-size: 18px;
   text-align: center;
 }
-.red-asterisk {
-  color: red;
-  font-size: 20px;
-}
 
-/* Styles for screens below 300px */
+/*Js form Styling for screens below 300px */
 @media only screen and (max-width: 300px) {
   .card {
     width: 200px;
@@ -189,13 +187,12 @@ ul.nav-pills .tab-heading {
   }
 }
 
-/* Styles for screens between 300px and 400px */
+/* Js form Styling for screens between 300px and 400px */
 @media only screen and (min-width: 300px) and (max-width: 500px) {
   .card {
     width: 300px;
     padding: 20px;
   }
-
   .form-group input {
     width: 250px !important;
   }

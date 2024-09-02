@@ -1,6 +1,4 @@
 function max() {
-  console.log("heelo");
-
   let number1 = parseFloat(document.getElementById("num1").value);
   const number2 = parseFloat(document.getElementById("num2").value);
   const resultElement = document.getElementById("max_result");
