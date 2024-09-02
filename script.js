@@ -131,17 +131,26 @@ $(document).ready(function () {
   );
 
   const $footer = $("#mypage_footer footer");
+  let isPopup = false;
   $footer.css({
     display: "none",
   });
   $("#mypage_footer").on("mouseenter", function () {
     $footer.stop(true, true).slideDown(10000, function () {
+      isPopup = true;
       $("#myModal").modal("show");
     });
   });
 
-  // Mouse leave: slide up
+  //  slide up
   $("#mypage_footer").on("mouseleave", function () {
+    if (!isPopup) {
+      $footer.stop(true).slideUp(500);
+    }
+  });
+
+  $(".btn").on("click", function () {
+    isPopup = false;
     $footer.stop(true).slideUp(500);
   });
 });
